@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Haven - Your Literary Destination</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            background-color: #2c3e50;
+            padding: 1rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        nav a:hover {
+            color: #3498db;
+        }
+
+        .hero {
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1507842217343-583bb7270b66');
+            height: 60vh;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .content {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .featured-books {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .book-card {
+            border: 1px solid #ddd;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .book-card img {
+            max-width: 200px;
+            height: auto;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        /* About page styles */
+        .about-content {
+            line-height: 1.6;
+        }
+
+        .about-content img {
+            max-width: 300px;
+            float: right;
+            margin: 0 0 1rem 1rem;
+        }
+
+        /* Contact page styles */
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-form button {
+            background-color: #2c3e50;
+            color: white;
+            padding: 0.5rem 1rem;
+            border: none;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #3498db;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Page -->
+    <div class="hero">
+        <div>
+            <h1>Welcome to Book Haven</h1>
+            <p>Your journey through literature starts here</p>
+        </div>
+    </div>
+
+    <div class="content">
+        <h2>Featured Books</h2>
+        <div class="featured-books">
+            <div class="book-card">
+                <img src="https://library.umpsa.edu.my/images/2024/03/22/Rich%20Dad%20Poor%20Dad.jpg" alt="Book 1">
+                <h3>Rich Dad Poor Dad</h3>
+                <p>By Robert T. Kiyosaki</p>
+            </div>
+            <div class="book-card">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/513EmERKdxL._SY550_.jpg" alt="Book 2">
+                <h3>The Ocean at the End of the Lane</h3>
+                <p>By Neil Gaiman</p>
+            </div>
+            <div class="book-card">
+                <img src="https://www.neilgaiman.com/works/images/thumb_TheAnnotatedAmericanGods__Hardback_1629515416.jpg" alt="Book 3">
+                <h3>Neil Gaiman's The Annotated American Gods</h3>
+                <p>By Neil Gaiman</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Book Haven. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
